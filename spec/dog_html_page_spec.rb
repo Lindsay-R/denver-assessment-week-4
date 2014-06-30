@@ -14,6 +14,7 @@ describe DogHTMLPage do
     end
 
     it "returns how many dogs in an h1 when there are 2 dogs" do
+      skip
       dog_html_page = DogHTMLPage.new([{:name => "Harleigh"},
                                        {:name => "Fido"}])
 
@@ -24,6 +25,7 @@ describe DogHTMLPage do
 
 
     it "returns no dogs if there are no dogs given" do
+      skip
       dog_html_page = DogHTMLPage.new([])
 
       title_html = dog_html_page.title
@@ -33,7 +35,9 @@ describe DogHTMLPage do
   end
 
   describe "#list" do
+    skip
     it "returns a list of the dog names in the order given" do
+      skip
       dog_html_page = DogHTMLPage.new([{:name => "Harleigh"},
                                        {:name => "Mali"},
                                        {:name => "Puff"},
@@ -45,6 +49,7 @@ describe DogHTMLPage do
     end
 
     it "returns nothing if there are no dogs" do
+      skip
       dog_html_page = DogHTMLPage.new([])
 
       list_html = dog_html_page.list
